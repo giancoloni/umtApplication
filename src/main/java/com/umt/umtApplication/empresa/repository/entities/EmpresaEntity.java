@@ -1,6 +1,5 @@
 package com.umt.umtApplication.empresa.repository.entities;
 
-import com.umt.umtApplication.empresa.repository.dto.EmpresaDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,10 +14,12 @@ public class EmpresaEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_empresa;
+    @Column(name = "id_empresa")
+    private Integer idEmpresa;
 
     @Column(name = "nome")
     private String nome;
+
     @Column(name = "instagram")
     private String instagram;
 

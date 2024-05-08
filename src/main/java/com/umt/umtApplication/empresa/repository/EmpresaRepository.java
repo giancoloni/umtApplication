@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmpresaRepository extends CrudRepository<EmpresaEntity, Integer>, JpaSpecificationExecutor<EmpresaEntity> {
+public interface EmpresaRepository extends CrudRepository<EmpresaEntity, Integer>, JpaSpecificationExecutor<EmpresaEntity>{
 
     //EmpresaEntity findById_empresa(Integer id_empresa);
 
